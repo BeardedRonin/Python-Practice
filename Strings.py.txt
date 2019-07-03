@@ -1,0 +1,22 @@
+Team1, Team2, Team3 = "Rob", "Seb", "Piers"
+Spec1, Spec2, Spec3 = "Cloud", "Cyber", "Infrastructure"
+print("You can choose from Cloud, Infrastructure or Cyber")
+
+i = 1
+while i < 10:
+    JobType = input("What type of job is this: ")
+    if JobType == Spec1:
+        print(Team1 + " can work this")
+        break
+    elif JobType == Spec2:
+        print(Team2 + " can work this for you")
+        break
+    elif JobType == Spec3:
+        print(Team3 + " will fuck this up for you")
+        break
+    else:
+        print("No one can do that")
+        i += 1
+
+if i >= 10:
+    print("I've lost my patience, bye")
